@@ -1,0 +1,11 @@
+#tutorial h1 {
+  font-size: 30px;
+  text-align: center;
+}
+#tutorial img {
+  width: 100%;
+  height: auto;
+}
+#contribute {
+  float: right;
+}

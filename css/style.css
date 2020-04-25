@@ -1,0 +1,18 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #292929;
+  color: #cbc9c9;
+  max-width: 90%;
+  margin: 0 auto;
+}
+a {
+  color: #cbc9c9;
+}
+
+footer {
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
