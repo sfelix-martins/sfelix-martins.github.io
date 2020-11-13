@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Teste</title>
+</head>
+<body style="text-align: center">
+<h1>Obrigado pela ajuda! :D</h1>
+<h2>Se necessário, <span style="color: blue" >faça login no edesenv</span> e acesse o link novamente para ajudar com os testes!</h2>
+<h3>Você será direcionado para a página de testes em instantes...</h3>
+<small style="position: absolute; bottom: 0; left: 0">Corre, ainda dá tempo: <span id="count">5</span></small>
+<script>
+    let count = 5;
+    const increment = () => {
+        count--;
+        const el = document.getElementById('count')
+        el.innerHTML = count
+        if (count === 0) {
+            el.innerHTML = 'Tchau...'
+            clearInterval(timer);
+        }
+    }
+    const timer = setInterval(increment, 1000);
+    setTimeout(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const n = urlParams.get('n');
+
+        window.location.href = "http://edesenv3.coopersystem.com.br/edesenv2/alocacoes/set_saida/n:" + n;
+    }, 5000)
+</script>
+</body>
+</html>
